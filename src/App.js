@@ -7,6 +7,7 @@ import AboutUs from './components/aboutUs';
 import ContactUs from './components/contactUs';
 import Product from './components/product';
 import ProductDetails from './components/productDetails';
+import NotFound from './components/notFound';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/product-details/:id" component={ProductDetails} />
             <Route path="/about-us" component={AboutUs} />
             <Route path="/contact-us" component={ContactUs} />
+            <Route component={NotFound} />
           </Switch>
         </div>
         </Router>
